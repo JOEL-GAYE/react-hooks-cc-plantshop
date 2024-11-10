@@ -11,12 +11,21 @@ function NewPlantForm({ onAddPlant }) {
     const newPlant = {
       name,
       image,
-      price: parseFloat(price)
+      price: parseFloat(price) || 0  // Ensuring price is a number
     };
 
-    onAddPlant(newPlant);
+    // Send new plant to the server
+    fetch("http://localhost:6001/plants", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newPlant),
+    })
+      .then(response => response.json())
+      .then(onAddPlant);
 
-    // Clear the form inputs
+    // Clear form inputs after submission
     setName("");
     setImage("");
     setPrice("");

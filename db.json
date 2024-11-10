@@ -42,17 +42,19 @@
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
     },
-    {
-      "id": "a3d9",
-      "name": "Shoyu Ramen",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Potato-Chips.jpg/1200px-Potato-Chips.jpg",
-      "price": 12.9
-    },
+   
     {
       "id": "fbe8",
       "name": "Avocado",
       "image": "https://grangettos.com/cdn/shop/articles/shutterstock_636669292_1400x.jpg?v=1629238033",
       "price": 20.87
+    },
+   
+    {
+      "id": "ce84",
+      "name": "Avocado",
+      "image": "https://grangettos.com/cdn/shop/articles/shutterstock_636669292_1400x.jpg?v=1629238033",
+      "price": 12.09
     }
   ]
 }

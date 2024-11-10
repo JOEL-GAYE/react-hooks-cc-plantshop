@@ -34,11 +34,11 @@ function App() {
     <div className="app">
       <Header />
       <PlantPage 
-        plants={filteredPlants} 
+          plants={filteredPlants} 
         onAddPlant={handleAddPlant} 
         onSearch={handleSearch}
       />
-      {/* <PlantList plants={filteredPlants} /> */}
+     
     </div>
   );
 }
