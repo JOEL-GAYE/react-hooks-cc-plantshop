@@ -42,19 +42,18 @@
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
     },
-   
     {
       "id": "fbe8",
       "name": "Avocado",
       "image": "https://grangettos.com/cdn/shop/articles/shutterstock_636669292_1400x.jpg?v=1629238033",
       "price": 20.87
     },
-   
+    
     {
-      "id": "ce84",
-      "name": "Avocado",
-      "image": "https://grangettos.com/cdn/shop/articles/shutterstock_636669292_1400x.jpg?v=1629238033",
-      "price": 12.09
+      "id": "3181",
+      "name": "Pawpaws",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwiA3tQ7T9WDdsMAIKgF3m8xl2jhigcBvBlA&s",
+      "price": 35.99
     }
   ]
 }

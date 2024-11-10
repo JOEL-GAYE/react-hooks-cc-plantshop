@@ -8,11 +8,16 @@ function App() {
   const [plants, setPlants] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
-  useEffect(() => {
-    // Fetch plants on load
+  // Function to fetch plants from backend
+  const fetchPlants = () => {
     fetch("http://localhost:6001/plants")
       .then(response => response.json())
       .then(data => setPlants(data));
+  };
+
+  useEffect(() => {
+    // Fetch plants on load
+    fetchPlants();
   }, []);
 
   const handleAddPlant = (newPlant) => {
@@ -21,8 +26,11 @@ function App() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newPlant),
     })
-      .then(response => response.json())
-      .then(addedPlant => setPlants([...plants, addedPlant]));
+    .then(response => response.json())
+    .then(() => {
+      // Refetch plants to update the list with the new plant from the backend
+      fetchPlants();
+    });
   };
 
   const handleSearch = (e) => setSearchTerm(e.target.value.toLowerCase());
