@@ -1,6 +1,11 @@
 import React from "react";
+import PlantList from "./PlantList";
 
 function NewPlantForm() {
+  const[plants,setPLants]=React.useState()
+  function handleAddPlants(newPlant){
+      setPLants([...PlantList,newPlant])
+  }
   return (
     <div className="new-plant-form">
       <h2>New Plant</h2>
