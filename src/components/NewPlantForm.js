@@ -15,7 +15,7 @@ function NewPlantForm({ onAddPlant }) {
     };
 
     // Send new plant to the server
-    fetch("http://localhost:6001/plants", {
+    fetch("https://my-json-server.typicode.com/JOEL-GAYE/react-hooks-cc-plantshop/plants", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

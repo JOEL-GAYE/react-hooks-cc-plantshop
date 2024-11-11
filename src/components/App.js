@@ -10,7 +10,7 @@ function App() {
 
   // Function to fetch plants from backend
   const fetchPlants = () => {
-    fetch("http://localhost:6001/plants")
+    fetch("https://my-json-server.typicode.com/JOEL-GAYE/react-hooks-cc-plantshop/plants")
       .then(response => response.json())
       .then(data => setPlants(data));
   };
@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   const handleAddPlant = (newPlant) => {
-    fetch("http://localhost:6001/plants", {
+    fetch("https://my-json-server.typicode.com/JOEL-GAYE/react-hooks-cc-plantshop/plants", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newPlant),
